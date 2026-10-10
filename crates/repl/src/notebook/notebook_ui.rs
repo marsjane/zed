@@ -6,7 +6,6 @@ use anyhow::{Context as _, Result};
 use client::proto::ViewId;
 use collections::HashMap;
 use editor::DisplayPoint;
-use feature_flags::{FeatureFlagAppExt as _, NotebookFeatureFlag};
 use futures::FutureExt;
 use futures::future::Shared;
 use gpui::{

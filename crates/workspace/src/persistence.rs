@@ -3498,6 +3498,7 @@ mod tests {
             session_id: None,
             window_id: None,
             user_toolchains: user_toolchains.clone(),
+            recent_navigation_history: Default::default(),
         };
 
         db.save_workspace(workspace.clone()).await;
@@ -3742,6 +3743,7 @@ mod tests {
             session_id: None,
             window_id: Some(1),
             user_toolchains: Default::default(),
+            recent_navigation_history: Default::default(),
         };
 
         db.save_workspace(workspace).await;

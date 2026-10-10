@@ -1365,6 +1365,7 @@ async fn test_open_remote_project_restores_user_toolchains(cx: &mut TestAppConte
         bookmarks: BTreeMap::new(),
         breakpoints: BTreeMap::new(),
         user_toolchains: user_toolchains.clone(),
+        recent_navigation_history: Default::default(),
         window_id: None,
     };
 
